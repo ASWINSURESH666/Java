@@ -1,39 +1,44 @@
 package QUESTION_5;
 
-import java.util.Scanner;
+public class Box {
+    private double length;
+    private double breadth;
+    private double height;
+    private double area;
+    private double volume;
 
+    public Box(double side) {
+        this.length = side;
+        this.breadth = side;
+        this.height = side;
+    }
 
-public class BoxMain {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public Box(double side1, double side2) {
+        this.length = side1;
+        this.breadth = side1;
+        this.height = side2;
+    }
 
-        System.out.println("Enter the side length of the cube:");
-        double sideLength = sc.nextDouble();
-        Box cube = new Box(sideLength);
-        cube.calculateArea();
-        cube.calculateVolume();
-        System.out.println("Cube:");
-        cube.printAreaAndVolume();
+    public Box(double length, double breadth, double height) {
+        this.length = length;
+        this.breadth = breadth;
+        this.height = height;
+    }
 
-        System.out.println("\nEnter the side lengths of the square prism:");
-        double side1 = sc.nextDouble();
-        double side2 = sc.nextDouble();
-        Box squarePrism = new Box(side1, side2);
-        squarePrism.calculateArea();
-        squarePrism.calculateVolume();
-        System.out.println("Square Prism:");
-        squarePrism.printAreaAndVolume();
+    public void calculateArea() {
+        area = 2 * ((length * breadth) + (breadth * height) + (length * height));
+    }
 
-        System.out.println("\nEnter the dimensions of the rectangular prism:");
-        double length = sc.nextDouble();
-        double breadth = sc.nextDouble();
-        double height = sc.nextDouble();
-        Box rectangularPrism = new Box(length, breadth, height);
-        rectangularPrism.calculateArea();
-        rectangularPrism.calculateVolume();
-        System.out.println("Rectangular Prism:");
-        rectangularPrism.printAreaAndVolume();
+    public void calculateVolume() {
+        volume = length * breadth * height;
+    }
 
-        sc.close();
+    public void printAreaAndVolume() {
+        System.out.println("Area: " + area);
+        System.out.println("Volume: " + volume);
+    }
+
+    public String getVolume() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
