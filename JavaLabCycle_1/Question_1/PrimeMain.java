@@ -1,9 +1,6 @@
 package QUESTION_1;
 
-/**
- *
- * @author HP
- */
+
 public class primeMain {
     public static void main(String args[]){
         prime obj=new prime();
