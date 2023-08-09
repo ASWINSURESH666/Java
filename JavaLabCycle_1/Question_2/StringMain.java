@@ -1,9 +1,5 @@
 package QUESTION_2;
 
-/**
- *
- * @author HP
- */
 public class StringsMain {
     public static void main(String[] args) {
         if (args.length != 2) {
