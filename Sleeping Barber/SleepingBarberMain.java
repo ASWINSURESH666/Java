@@ -6,7 +6,7 @@ package SleepingBarber;
 
 /**
  *
- * @author lanaa
+ * @author HP
  */
 public class SleepingBarberMain {
 
