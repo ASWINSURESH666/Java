@@ -6,7 +6,7 @@ package SleepingBarber;
 
 /**
  *
- * @author lanaa
+ * @author HP
  */
 import java.util.concurrent.Semaphore;
 
