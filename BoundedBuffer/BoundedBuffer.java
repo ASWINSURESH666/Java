@@ -6,7 +6,7 @@ package BoundedBuffer;
 
 /**
  *
- * @author lanaa
+ * @author HP
  */
 public class BoundedBuffer {
 
