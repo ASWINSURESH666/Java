@@ -10,7 +10,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  *
- * @author lanaa
+ * @author HP
  */
 public class DiningPhilosophers {
 
