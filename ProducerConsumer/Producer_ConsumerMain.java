@@ -6,7 +6,7 @@ package Producer_Consumer;
 
 /**
  *
- * @author lanaa
+ * @author HP
  */
 public class Producer_ConsumerMain {
 
