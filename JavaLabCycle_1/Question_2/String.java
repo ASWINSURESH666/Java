@@ -1,17 +1,17 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package QUESTION_2;
 
-class Strings {
-    int num;
-    String name;
-
-    void setData(int num, String name) {
-        this.num = num;
-        this.name = name;
-    }
-
-    void print() {
-        for (int i = 0; i < num; i++) {
-            System.out.println(name);
+/**
+ *
+ * @author HP
+ */
+public class Strings {
+    public static void repeatString(String str, int n) {
+        for (int i = 0; i < n; i++) {
+            System.out.println(str);
         }
     }
 }
