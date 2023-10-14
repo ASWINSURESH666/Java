@@ -2,9 +2,16 @@ package QUESTION_1;
 
 
 public class primeMain {
-    public static void main(String args[]){
-        prime obj=new prime();
-        int n=Integer.parseInt(args[0]); //changes string to int
-        obj.printPrime(n);
+    public void printPrime(int n) {
+        int count = 0;
+        int num = 2;
+        while (count < n) {
+            if (isPrime(num)) {
+                System.out.print(num + " ");
+                count++;
+            }
+            num++;
+        }
+        System.out.println();
     }
 }
